@@ -1,0 +1,126 @@
+/* 🎨 Global Styles */
+:root {
+    --primary-color: #007bff;
+    --dark-gray: #333;
+    --light-gray: #f8f9fa;
+    --transition: all 0.3s ease-in-out;
+}
+
+/* 🌙 Dark Mode */
+body.dark {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+/* 📌 Navbar Styles */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+};
+    /* background-color: black;
+    padding: 15px 45px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    justify-content:space-between;
+    z-index: 1000; */
+/* } */
+
+/* 📌 Navbar Links */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: var(--transition);
+}
+
+/* 🔥 Hover Effects */
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* 🎭 Active Link */
+.nav-links a.active {
+    background-color: white;
+    color: black;
+}
+
+/* 📱 Responsive Navbar (Mobile View) */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+    .nav-links a {
+        display: block;
+        padding: 12px;
+    }
+}
+
+/* 🎯 Button Styles */
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: var(--transition);
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* 🎨 Input Styles */
+input {
+    padding: 10px;
+    border: 1px solid var(--dark-gray);
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* 🕶 Dark Mode Toggle */
+.dark-mode-toggle {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+}
+
+/* 📊 Table Styling (For Revenue & Reports) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: black;
+    color: white;
+}
